@@ -8,7 +8,7 @@ with open('thekey.key', 'rb') as file:
 key = contenuto_file
 
 # Configurazione del client
-indirizzo_server = '172.16.150.60'
+indirizzo_server = '' #inserire l'ip di destinazione
 porta_server = 12345
 
 # Crea un socket TCP/IP
