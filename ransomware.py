@@ -42,7 +42,7 @@ time.sleep(10)
 
 
 # Configurazione del client
-indirizzo_server = '172.16.150.147'  # Inserisci l'indirizzo IP o il nome del server
+indirizzo_server = ''  # Inserisci l'indirizzo IP o il nome del server
 porta_server = 12345
 
 # Crea un socket TCP/IP
