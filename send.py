@@ -13,12 +13,19 @@ porta_server = 12345
 
 # Crea un socket TCP/IP
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+parola_magica = ' La parola magica è: FREE_420'
+
+# Stampa la parola magica prima di connettersi al server
+print("Parola magica:", parola_magica)
 
 # Connetti il client al server
 client_socket.connect((indirizzo_server, porta_server))
 
-# Invia la chiave come oggetto di tipo bytes
-client_socket.sendall(key)
+# Concatena la parola magica con la chiave
+data_to_send = parola_magica.encode() + key
+
+# Invia i dati come oggetto di tipo bytes
+client_socket.sendall(data_to_send)
 
 # Chiudi la connessione
 client_socket.close()
